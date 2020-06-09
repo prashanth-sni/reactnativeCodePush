@@ -31,8 +31,9 @@ class App extends Component{
   render(){
     return (
       <View style={styles.container}>
-        <Text style={styles.text}>Well come to React Native </Text>
-        <Text style={styles.text}>Add any feature to app buy editing App.js </Text>
+        <Text style={styles.text}>Well come to React Native code push </Text>
+        <Text style={styles.text}>Add any feature to app by editing App.js </Text>
+        
         <Button title="codepush sync" onPress={()=>this.codePushSync()}/>
       </View>
     );
