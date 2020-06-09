@@ -21,7 +21,7 @@ class App extends Component{
   componentDidMount(){
     // console.log("codePush value", codePush);
     codePush.sync({
-      updateDialog:false,
+      // updateDialog:false,
       installMode:codePush.InstallMode.ON_NEXT_RESTART
     })
   }
