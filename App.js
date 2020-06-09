@@ -46,10 +46,11 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     alignItems:"center",
     padding:20,
-    backgroundColor:'white'
+    backgroundColor:'tomato'
   },
   text:{
-    fontSize:18
+    fontSize:18,
+    textAlign:'center'
   }
 });
 
