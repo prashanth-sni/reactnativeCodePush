@@ -19,21 +19,22 @@ import {
 
 class App extends Component{
   componentDidMount(){
-    console.log("codePush", codePush)
-  }
-  codePushSync(){
-    console.log('clicked codePush sync.');
+    console.log("codePush", codePush);
     codePush.sync({
       updateDialog:true,
       installMode:codePush.InstallMode.IMMEDIATE
     })
   }
+  // codePushSync(){
+    
+  // }
   render(){
     return (
       <View style={styles.container}>
         <Text style={styles.text}>Well come to React Native code push </Text>
-        
-        <Button title="codepush sync" onPress={()=>this.codePushSync()}/>
+        {/* <View>
+          <Button title="codepush sync" onPress={()=>this.codePushSync()}/>
+        </View> */}
       </View>
     );
   }
@@ -42,8 +43,10 @@ class App extends Component{
 const styles = StyleSheet.create({
   container:{
     flex:1,
+    justifyContent:'center',
+    alignItems:"center",
     padding:20,
-    backgroundColor:'dodgerblue'
+    backgroundColor:'tomato'
   },
   text:{
     fontSize:18
