@@ -43,7 +43,8 @@ class App extends Component{
 const styles = StyleSheet.create({
   container:{
     flex:1,
-    padding:20
+    padding:20,
+    backgroundColor:'tomato'
   },
   text:{
     fontSize:18
