@@ -21,8 +21,8 @@ class App extends Component{
   componentDidMount(){
     // console.log("codePush value", codePush);
     codePush.sync({
-      updateDialog:true,
-      installMode:codePush.InstallMode.IMMEDIATE
+      updateDialog:false,
+      installMode:codePush.InstallMode.ON_NEXT_RESTART
     })
   }
   // codePushSync(){
@@ -31,7 +31,7 @@ class App extends Component{
   render(){
     return (
       <View style={styles.container}>
-        <Text style={styles.text}>Well come to Applied SNI. </Text>
+        <Text style={styles.text}>Well come to Applied SNI And changes. </Text>
         {/* <View>
           <Button title="codepush sync" onPress={()=>this.codePushSync()}/>
         </View> */}
