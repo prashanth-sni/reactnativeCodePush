@@ -31,7 +31,7 @@ class App extends Component{
   render(){
     return (
       <View style={styles.container}>
-        <Text style={styles.text}>Well come to Applied SNI And changes. </Text>
+        <Text style={styles.text}>Well come to Applied SNI And changes without dialog. </Text>
         {/* <View>
           <Button title="codepush sync" onPress={()=>this.codePushSync()}/>
         </View> */}
