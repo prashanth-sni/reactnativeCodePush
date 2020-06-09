@@ -32,7 +32,6 @@ class App extends Component{
     return (
       <View style={styles.container}>
         <Text style={styles.text}>Well come to React Native code push </Text>
-        <Text style={styles.text}>Add any feature to app by editing App.js </Text>
         
         <Button title="codepush sync" onPress={()=>this.codePushSync()}/>
       </View>
@@ -44,7 +43,7 @@ const styles = StyleSheet.create({
   container:{
     flex:1,
     padding:20,
-    backgroundColor:'tomato'
+    backgroundColor:'dodgerblue'
   },
   text:{
     fontSize:18
