@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     alignItems:"center",
     padding:20,
-    backgroundColor:'tomato'
+    backgroundColor:'white'
   },
   text:{
     fontSize:18
