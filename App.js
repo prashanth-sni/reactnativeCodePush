@@ -6,32 +6,38 @@
  * @flow strict-local
  */
 
-import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
+import React, {Component} from 'react';
+import codePush from 'react-native-code-push'
+import {  
+  StyleSheet,  
   View,
   Text,
-  StatusBar,
+  Button,  
 } from 'react-native';
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+// console.log('codePush values', codePush);
 
-const App = () => {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Well come to React Native </Text>
-      <Text style={styles.text}>Add any feature to app buy editing App.js </Text>
-    </View>
-  );
-};
+class App extends Component{
+  componentDidMount(){
+    console.log("codePush", codePush)
+  }
+  codePushSync(){
+    console.log('clicked codePush sync.');
+    codePush.sync({
+      updateDialog:true,
+      installMode:codePush.InstallMode.IMMEDIATE
+    })
+  }
+  render(){
+    return (
+      <View style={styles.container}>
+        <Text style={styles.text}>Well come to React Native </Text>
+        <Text style={styles.text}>Add any feature to app buy editing App.js </Text>
+        <Button title="codepush sync" onPress={()=>this.codePushSync()}/>
+      </View>
+    );
+  }
+}
 
 const styles = StyleSheet.create({
   container:{
