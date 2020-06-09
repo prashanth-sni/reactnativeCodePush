@@ -22,7 +22,7 @@ class App extends Component{
     // console.log("codePush value", codePush);
     codePush.sync({
       // updateDialog:false,
-      installMode:codePush.InstallMode.ON_NEXT_RESTART
+      installMode:codePush.InstallMode.IMMEDIATE
     })
   }
   // codePushSync(){
@@ -31,7 +31,12 @@ class App extends Component{
   render(){
     return (
       <View style={styles.container}>
-        <Text style={styles.text}>Well come to Applied SNI And changes without dialog. </Text>
+        <Text style={styles.text}>
+          Well come to Applied SNI. 
+        </Text>
+        <Text style={styles.text}>
+          its a code push demo. 
+        </Text>
         {/* <View>
           <Button title="codepush sync" onPress={()=>this.codePushSync()}/>
         </View> */}
@@ -46,7 +51,7 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     alignItems:"center",
     padding:20,
-    backgroundColor:'tomato'
+    backgroundColor:'green'
   },
   text:{
     fontSize:18,
